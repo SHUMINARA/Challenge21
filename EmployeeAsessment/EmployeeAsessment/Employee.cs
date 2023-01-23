@@ -23,9 +23,13 @@ namespace EmployeeAsessment
             {
             return this.grade.Sum();}
     }
-        public void AddGrade(int number) 
+        public void Add5Grades(int number1, int number2, int number3, int number4, int number5) 
         {
-            this.grade.Add(number);
+            this.grade.Add(number1);
+            this.grade.Add(number2);
+            this.grade.Add(number3);
+            this.grade.Add(number4);
+            this.grade.Add(number5);
 
         }
     }
