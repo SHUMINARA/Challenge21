@@ -1,33 +1,33 @@
-﻿using System;
+using System;
 using System.Runtime.CompilerServices;
 
-string number;
+string input;
 Console.WriteLine("Please enter your number?");
-number = Console.ReadLine();
-char[] numberChar = number.ToArray();
+input = Console.ReadLine();
+char[] arrayOfDigits = input.ToArray();
 
-List<char> numbers = new List<char>();
-numbers.Add('0');
-numbers.Add('1');
-numbers.Add('2');
-numbers.Add('3');
-numbers.Add('4');
-numbers.Add('5');
-numbers.Add('6');
-numbers.Add('7');
-numbers.Add('8');
-numbers.Add('9');
+List<char> digits = new List<char>();
+digits.Add('0');
+digits.Add('1');
+digits.Add('2');
+digits.Add('3');
+digits.Add('4');
+digits.Add('5');
+digits.Add('6');
+digits.Add('7');
+digits.Add('8');
+digits.Add('9');
 
 
 
 Console.WriteLine("In your number you have:");
 
-foreach (var n in numbers)
+foreach (var number in digits)
 {
     int count = 0;
-    foreach (var numberChars in numberChar)
+    foreach (var digit in arrayOfDigits)
     {
-        if(n == numberChars) count++;
+        if(number == digit) count++;
     }
-    Console.WriteLine(n + "=" + count);
+    Console.WriteLine(number + "=" + count);
 }
